@@ -114,10 +114,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                  &kp SQT     &kp COMMA   &kp DOT       &kp P        &kp Y            &kp F        &kp G        &kp C          &kp R       &kp L
-                  &hml LALT A &hml LGUI O &hml LSHFT E  &hml LCTRL U &lt NUM I        &kp D        &hmr RCTRL H &hmr RSHFT T   &hmr RGUI N &hmr RALT S 
-         &kp ESC  &kp SEMI    &kp Q       &kp J         &kp K        &lt NAV X        &kp B        &kp M        &kp W          &kp V       &kp Z       &kp MINUS
-                                          &sk LSHIFT    &kp RET      &sl RH           &sl LH       &kp SPACE    &sk RSHIFT
+                  &kp SQT        &kp COMMA    &kp DOT       &kp P        &kp Y            &kp F        &kp G        &kp C          &kp R       &kp L
+                  &kp A          &kp O        &kp E         &kp U        &lt NUM I        &kp D        &kp H        &kp T          &kp N       &kp S 
+         &kp ESC  &hml LALT SEMI &hml LGUI Q  &hml LSHFT J  &hml LCTRL K &lt NAV X        &kp B        &hmr RCTRL M &hmr RSHFT W   &hmr RGUI V &hmr RALT Z       &kp MINUS
+                                              &sk LSHIFT    &kp RET      &sl RH           &sl LH       &kp SPACE    &sk RSHIFT
             >;
         };
 
