@@ -169,7 +169,7 @@
                   &kp EXCL    &kp AT      &kp HASH      &kp DOLLAR   &kp PRCNT            &trans        &trans        &trans          &trans       &trans
                   &trans      &trans      &kp EQUAL     &kp SLASH    &kp MINUS            &trans        &trans        &trans          &trans       &trans 
          &trans   &trans      &trans      &kp BSLH      &kp SQT      &kp GRAVE            &trans        &trans        &trans          &trans       &trans       &trans
-                                          &sk LSHIFT    &kp RET      &mo ADJ              &trans        &trans        &trans
+                                          &sk LSHIFT    &kp TAB      &mo ADJ              &trans        &trans        &trans
             >;
         };
 
