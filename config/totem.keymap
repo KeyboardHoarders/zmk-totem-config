@@ -110,14 +110,14 @@
             // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
             // ┃    ESC    ┃     ;     ┃     Q     ┃     J     ┃     K     ┃  X (NAV)  ┃   ┃     B     ┃     M     ┃     W     ┃     V     ┃     Z     ┃     -     ┃
             // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
-            //                                     ┃   SHIFT   ┃    RET    ┃   L(RH)   ┃   ┃   L(LH)   ┃    SPC    ┃   SHIFT   ┃
+            //                                     ┃   SHIFT   ┃    TAB    ┃   L(RH)   ┃   ┃   L(LH)   ┃    SPC    ┃   SHIFT   ┃
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
                   &kp SQT        &kp COMMA    &kp DOT       &kp P        &kp Y            &kp F        &kp G        &kp C          &kp R       &kp L
                   &kp A          &kp O        &kp E         &kp U        &lt NUM I        &kp D        &kp H        &kp T          &kp N       &kp S 
          &kp ESC  &hml LALT SEMI &hml LGUI Q  &hml LSHFT J  &hml LCTRL K &lt NAV X        &kp B        &hmr RCTRL M &hmr RSHFT W   &hmr RGUI V &hmr RALT Z       &kp MINUS
-                                              &sk LSHIFT    &kp RET      &sl RH           &sl LH       &kp SPACE    &sk RSHIFT
+                                              &sk LSHIFT    &kp TAB      &sl RH           &sl LH       &kp SPACE    &sk RSHIFT
             >;
         };
 
@@ -162,14 +162,14 @@
             // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
             // ┃           ┃           ┃           ┃     \     ┃     '     ┃     `     ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
             // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
-            //                                     ┃           ┃    TAB    ┃   L(ADJ)  ┃   ┃           ┃           ┃           ┃
+            //                                     ┃           ┃    RET    ┃   L(ADJ)  ┃   ┃           ┃           ┃           ┃
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
                   &kp EXCL    &kp AT      &kp HASH      &kp DOLLAR   &kp PRCNT            &trans        &trans        &trans          &trans       &trans
                   &trans      &trans      &kp EQUAL     &kp SLASH    &kp MINUS            &trans        &trans        &trans          &trans       &trans 
          &trans   &trans      &trans      &kp BSLH      &kp SQT      &kp GRAVE            &trans        &trans        &trans          &trans       &trans       &trans
-                                          &sk LSHIFT    &kp TAB      &mo ADJ              &trans        &trans        &trans
+                                          &sk LSHIFT    &kp RET      &mo ADJ              &trans        &trans        &trans
             >;
         };
 
