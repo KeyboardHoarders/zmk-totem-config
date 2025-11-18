@@ -136,10 +136,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &trans  &kp LEFT_BRACKET  &kp SINGLE_QUOTE   &kp RIGHT_BRACKET      &kp KP_MINUS     &kp KP_PLUS       &kp N7        &kp N8        &kp N9        &kp KP_NUMBER_0
-        &trans  &kp LPAR          &kp GRAVE          &kp RIGHT_PARENTHESIS  &kp UNDER        &kp EQUAL         &kp NUMBER_4  &kp N5        &kp NUMBER_6  &trans
-&trans  &trans  &kp LBRC          &kp DOUBLE_QUOTES  &kp RIGHT_BRACE        &kp LESS_THAN    &kp GREATER_THAN  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans           &trans
-                                  &kp LSHIFT         &trans                 &trans           &trans            &kp KP_N0     &kp RSHFT
+        &trans     &kp LEFT_BRACKET  &kp SINGLE_QUOTE   &kp RIGHT_BRACKET      &kp KP_MINUS     &kp KP_PLUS       &kp N7        &kp N8        &kp N9        &kp KP_NUMBER_0
+        &kp TILDE  &kp LPAR          &kp GRAVE          &kp RIGHT_PARENTHESIS  &kp UNDER        &kp EQUAL         &kp NUMBER_4  &kp N5        &kp NUMBER_6  &trans
+&trans  &trans     &kp LBRC          &kp DOUBLE_QUOTES  &kp RIGHT_BRACE        &kp LESS_THAN    &kp GREATER_THAN  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans           &trans
+                                     &kp LSHIFT         &trans                 &trans           &trans            &kp KP_N0     &kp RSHFT
             >;
         };
 
