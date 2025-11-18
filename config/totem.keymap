@@ -157,10 +157,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp EXCL  &kp AT       &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS  &kp ASTERISK  &trans     &trans
-        &trans    &kp LS(TAB)  &kp ESC   &kp TAB   &trans       &kp LEFT   &kp DOWN  &kp UP_ARROW  &kp RIGHT  &trans
-&trans  &trans    &trans       &trans    &trans    &trans       &trans     &trans    &trans        &trans     &kp BSLH  &trans
-                               &trans    &trans    &mo ADJ      &trans     &trans    &trans
+        &kp EXCL  &kp AT       &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS       &kp ASTERISK  &trans     &trans
+        &trans    &kp LS(TAB)  &kp ESC   &kp TAB   &trans       &kp LEFT   &kp DOWN       &kp UP_ARROW  &kp RIGHT  &trans
+&trans  &trans    &trans       &trans    &trans    &trans       &kp HOME   &kp PAGE_DOWN  &kp PG_UP     &kp END    &kp BSLH  &trans
+                               &trans    &trans    &mo ADJ      &trans     &trans         &trans
             >;
         };
 
@@ -188,6 +188,15 @@
 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR_ALL    &trans  &kp F1  &kp F2  &kp F3  &kp F10  &trans
                                           &trans        &trans        &trans            &trans  &trans  &trans
             >;
+        };
+    };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        adjust {
+            if-layers = <1 2>;
+            then-layer = <3>;
         };
     };
 };
