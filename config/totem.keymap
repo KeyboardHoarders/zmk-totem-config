@@ -113,7 +113,7 @@
         &kp Q               &kp W             &kp E             &kp R              &kp T      &kp Y          &kp U               &kp I              &kp O              &kp P
         &hrm_left LSHIFT A  &hrm_left LGUI S  &hrm_left LALT D  &hrm_left LCTRL F  &kp G      &kp H          &hrm_right RCTRL J  &hrm_right RALT K  &hrm_right RGUI L  &hrm_right RSHIFT SEMI
 &trans  &kp Z               &kp X             &kp C             &kp V              &kp B      &kp N          &kp M               &kp COMMA          &kp DOT            &kp SLASH               &trans
-                                              &kp LEFT_SHIFT    &lt 1 SPACE        &kp DEL    &kp BACKSPACE  &lt 2 RET           &kp RIGHT_SHIFT
+                                              &kp LEFT_SHIFT    &lt 2 SPACE        &kp DEL    &kp BACKSPACE  &lt 1 RET           &kp RIGHT_SHIFT
             >;
         };
 
@@ -139,7 +139,7 @@
         &trans  &kp LEFT_BRACKET  &kp SINGLE_QUOTE   &kp RIGHT_BRACKET      &kp KP_MINUS     &kp KP_PLUS       &kp N7        &kp N8        &kp N9        &kp KP_NUMBER_0
         &trans  &kp LPAR          &kp GRAVE          &kp RIGHT_PARENTHESIS  &kp UNDER        &kp EQUAL         &kp NUMBER_4  &kp N5        &kp NUMBER_6  &trans
 &trans  &trans  &kp LBRC          &kp DOUBLE_QUOTES  &kp RIGHT_BRACE        &kp LESS_THAN    &kp GREATER_THAN  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans           &trans
-                                  &trans             &trans                 &trans           &trans            &kp KP_N0     &trans
+                                  &kp LSHIFT         &trans                 &trans           &trans            &kp KP_N0     &kp RSHFT
             >;
         };
 
@@ -162,10 +162,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp EXCL  &kp AT       &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS       &kp ASTERISK  &trans     &trans
-        &trans    &kp LS(TAB)  &kp ESC   &kp TAB   &trans       &kp LEFT   &kp DOWN       &kp UP_ARROW  &kp RIGHT  &trans
-&trans  &trans    &trans       &trans    &trans    &trans       &kp HOME   &kp PAGE_DOWN  &kp PG_UP     &kp END    &kp BSLH  &trans
-                               &trans    &trans    &mo ADJ      &trans     &trans         &trans
+        &kp EXCL  &kp AT       &kp HASH   &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS       &kp ASTERISK  &trans     &trans
+        &trans    &kp LS(TAB)  &kp ESC    &kp TAB   &trans       &kp LEFT   &kp DOWN       &kp UP_ARROW  &kp RIGHT  &trans
+&trans  &trans    &trans       &trans     &trans    &trans       &kp HOME   &kp PAGE_DOWN  &kp PG_UP     &kp END    &kp BSLH  &trans
+                               &kp LSHFT  &trans    &trans       &trans     &trans         &kp RSHFT
             >;
         };
 
