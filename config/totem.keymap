@@ -14,7 +14,6 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
-#include <dt-bindings/zmk/pointing.h>
 
 #define BASE 0
 #define NAV  1
@@ -56,6 +55,34 @@
         };
     };
 
+    behaviors {
+        hrm_left: hrm_left {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HRM_LEFT";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <190>;
+            quick-tap-ms = <200>;
+            require-prior-idle-ms = <160>;
+            flavor = "tap-preferred";
+            hold-trigger-key-positions = <5 15 26 27 6 16 7 17 28 8 18 29 9 19 30 31 35 36 37 34 33 32 13 12 11 10>;
+        };
+
+        hrm_right: hrm_right {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HRM_RIGHT";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <190>;
+            quick-tap-ms = <200>;
+            require-prior-idle-ms = <160>;
+            flavor = "tap-preferred";
+            hold-trigger-key-positions = <16 17 18 19 34 33 32 13 12 11 10 0 1 2 3 4 10 11 12 13 14 22 23 24 25 20 21 37 36 35>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -78,9 +105,9 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                  &kp Q       &kp W       &kp E         &kp R        &kp T            &kp Y        &kp U        &kp I          &kp O       &kp P
-                  &mt LGUI A  &mt LALT S  &mt LCTRL D   &mt LSHFT F  &kp G            &kp H        &mt RSHFT J  &mt RCTRL K    &mt RALT L  &mt RGUI SEMI
-&kp LEFT_CONTROL  &kp Z       &kp X       &kp C         &kp V        &kp B            &kp N        &kp M        &kp COMMA      &kp DOT     &kp SLASH       &kp APOS
+                  &kp Q       &kp W       &kp E         &kp R        &kp T            &kp Y        &kp U        &kp I         &kp O       &kp P
+                  &mt LGUI A  &mt LALT S  &mt LCTRL D   &mt LSHFT F  &kp G            &kp H        &mt RSHFT J  &mt RCTRL K   &mt RALT L  &mt RGUI SEMI
+&kp LEFT_CONTROL  &kp Z       &kp X       &kp C         &kp V        &kp B            &kp N        &kp M        &kp COMMA     &kp DOT     &kp SLASH      &kp APOS
                                           &kp LEFT_GUI  &kp TAB      &lt NAV SPACE    &lt SYM RET  &kp BSPC     &kp LEFT_ALT
             >;
         };
