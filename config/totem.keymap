@@ -110,10 +110,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-            &kp Q               &kp W             &kp E             &kp R              &kp T         &kp Y          &kp U               &kp I              &kp O              &kp P
-            &hrm_left LSHIFT A  &hrm_left LGUI S  &hrm_left LALT D  &hrm_left LCTRL F  &kp G         &kp H          &hrm_right RCTRL J  &hrm_right RALT K  &hrm_right RGUI L  &hrm_right RGUI SEMI
-&kp ESCAPE  &kp Z               &kp X             &kp C             &kp V              &kp B         &kp N          &kp M               &kp COMMA          &kp DOT            &kp SLASH             &kp APOS
-                                                  &mo 1             &lt 1 SPACE        &kp DELETE    &kp BACKSPACE  &lt 2 RET           &mo 2
+        &kp Q               &kp W             &kp E             &kp R              &kp T      &kp Y          &kp U               &kp I              &kp O              &kp P
+        &hrm_left LSHIFT A  &hrm_left LGUI S  &hrm_left LALT D  &hrm_left LCTRL F  &kp G      &kp H          &hrm_right RCTRL J  &hrm_right RALT K  &hrm_right RGUI L  &hrm_right RSHIFT SEMI
+&trans  &kp Z               &kp X             &kp C             &kp V              &kp B      &kp N          &kp M               &kp COMMA          &kp DOT            &kp SLASH               &trans
+                                              &kp LEFT_SHIFT    &lt 1 SPACE        &kp DEL    &kp BACKSPACE  &lt 2 RET           &kp RIGHT_SHIFT
             >;
         };
 
