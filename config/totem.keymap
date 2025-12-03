@@ -136,10 +136,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                &kp Q               &kp W             &kp E             &kp R              &kp T           &kp Y               &kp U               &kp I              &kp O              &kp P
-                &hrm_left LSHIFT A  &hrm_left LGUI S  &hrm_left LALT D  &hrm_left LCTRL F  &kp G           &kp H               &hrm_right RCTRL J  &hrm_right RALT K  &hrm_right RGUI L  &hrm_right RSHIFT SEMI
-&kp LEFT_SHIFT  &kp Z               &kp X             &kp C             &kp V              &kp B           &kp N               &kp M               &kp COMMA          &kp DOT            &kp SLASH               &kp RIGHT_SHIFT
-                                                      &mo 2             &kp SPACE          &lt_qt 2 DEL    &lt_qt 1 BACKSPACE  &kp RETURN          &mo 1
+                &kp Q                &kp W             &kp E             &kp R              &kp T           &kp Y               &kp U               &kp I              &kp O              &kp P
+                &hrm_shift LSHIFT A  &hrm_left LGUI S  &hrm_left LALT D  &hrm_left LCTRL F  &kp G           &kp H               &hrm_right RCTRL J  &hrm_right RALT K  &hrm_right RGUI L  &hrm_shift RSHIFT SEMI
+&kp LEFT_SHIFT  &kp Z                &kp X             &kp C             &kp V              &kp B           &kp N               &kp M               &kp COMMA          &kp DOT            &kp SLASH               &kp RIGHT_SHIFT
+                                                       &mo 2             &kp SPACE          &lt_qt 2 DEL    &lt_qt 1 BACKSPACE  &kp RETURN          &mo 1
             >;
         };
 
