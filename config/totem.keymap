@@ -86,6 +86,32 @@
             flavor = "tap-preferred";
             hold-trigger-key-positions = <16 17 18 19 34 33 32 13 12 11 10 0 1 2 3 4 10 11 12 13 14 22 23 24 25 20 21 37 36 35>;
         };
+
+        hrm_shift: hrm_shift {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HRM_SHIFT";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <160>;
+            quick-tap-ms = <200>;
+            require-prior-idle-ms = <100>;
+            flavor = "balanced";
+            hold-trigger-key-positions = <5 15 26 27 6 16 7 17 28 8 18 29 9 19 30 31 35 36 37 34 33 32 13 12 11 10 4 25 14 24 3 2 23 1 22 0 21 20>;
+        };
+
+        lt_qt: lt_qt {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LT_QT";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <160>;
+            quick-tap-ms = <200>;
+            require-prior-idle-ms = <100>;
+            flavor = "tap-preferred";
+            hold-trigger-key-positions = <5 15 26 27 6 16 7 17 28 8 18 29 9 19 30 31 35 36 37 34 33 32 13 12 11 10 4 25 14 24 3 2 23 1 22 0 21 20>;
+        };
     };
 
     keymap {
@@ -110,10 +136,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                &kp Q               &kp W             &kp E             &kp R              &kp T      &kp Y          &kp U               &kp I              &kp O              &kp P
-                &hrm_left LSHIFT A  &hrm_left LGUI S  &hrm_left LALT D  &hrm_left LCTRL F  &kp G      &kp H          &hrm_right RCTRL J  &hrm_right RALT K  &hrm_right RGUI L  &hrm_right RSHIFT SEMI
-&kp LEFT_SHIFT  &kp Z               &kp X             &kp C             &kp V              &kp B      &kp N          &kp M               &kp COMMA          &kp DOT            &kp SLASH               &kp RIGHT_SHIFT
-                                                      &mo 2             &lt 2 SPACE        &kp DEL    &kp BACKSPACE  &lt 1 RETURN        &mo 1
+                &kp Q               &kp W             &kp E             &kp R              &kp T           &kp Y               &kp U               &kp I              &kp O              &kp P
+                &hrm_left LSHIFT A  &hrm_left LGUI S  &hrm_left LALT D  &hrm_left LCTRL F  &kp G           &kp H               &hrm_right RCTRL J  &hrm_right RALT K  &hrm_right RGUI L  &hrm_right RSHIFT SEMI
+&kp LEFT_SHIFT  &kp Z               &kp X             &kp C             &kp V              &kp B           &kp N               &kp M               &kp COMMA          &kp DOT            &kp SLASH               &kp RIGHT_SHIFT
+                                                      &mo 2             &kp SPACE          &lt_qt 2 DEL    &lt_qt 1 BACKSPACE  &kp RETURN          &mo 1
             >;
         };
 
@@ -165,7 +191,7 @@
         &kp EXCL  &kp AT       &kp HASH   &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS       &kp ASTERISK  &trans     &trans
         &trans    &kp LS(TAB)  &kp ESC    &kp TAB   &trans       &kp LEFT   &kp DOWN       &kp UP_ARROW  &kp RIGHT  &trans
 &trans  &trans    &trans       &trans     &trans    &trans       &kp HOME   &kp PAGE_DOWN  &kp PG_UP     &kp END    &kp BSLH  &trans
-                               &kp LSHFT  &trans    &trans       &trans     &trans         &kp RSHFT
+                               &kp LSHFT  &trans    &trans       &kp DEL    &trans         &kp RSHFT
             >;
         };
 
