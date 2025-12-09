@@ -201,10 +201,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp EXCL  &kp AT  &kp HASH   &kp DLLR     &kp PRCNT    &kp CARET  &kp AMPS       &kp ASTERISK  &trans     &trans
-        &trans    &trans  &trans     &kp TAB      &trans       &kp LEFT   &kp DOWN       &kp UP_ARROW  &kp RIGHT  &trans
-&trans  &trans    &trans  &trans     &kp LS(TAB)  &trans       &kp HOME   &kp PAGE_DOWN  &kp PG_UP     &kp END    &kp BSLH  &trans
-                          &kp LSHFT  &trans       &trans       &kp DEL    &trans         &kp RSHFT
+        &kp EXCL  &kp AT    &kp HASH      &kp DLLR     &kp PRCNT    &kp CARET  &kp AMPS       &kp ASTERISK  &trans     &trans
+        &trans    &kp LGUI  &kp LEFT_ALT  &kp TAB      &trans       &kp LEFT   &kp DOWN       &kp UP_ARROW  &kp RIGHT  &trans
+&trans  &trans    &trans    &trans        &kp LS(TAB)  &trans       &kp HOME   &kp PAGE_DOWN  &kp PG_UP     &kp END    &kp BSLH  &trans
+                            &kp LSHFT     &trans       &trans       &kp DEL    &trans         &kp RSHFT
             >;
         };
 
