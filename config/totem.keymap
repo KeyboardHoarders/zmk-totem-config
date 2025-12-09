@@ -87,9 +87,9 @@
             hold-trigger-key-positions = <16 17 18 19 34 33 32 13 12 11 10 0 1 2 3 4 10 11 12 13 14 22 23 24 25 20 21 37 36 35>;
         };
 
-        hrm_shift: hrm_shift {
+        hrm_rshift: hrm_rshift {
             compatible = "zmk,behavior-hold-tap";
-            label = "HRM_SHIFT";
+            label = "HRM_RSHIFT";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
@@ -111,6 +111,19 @@
             require-prior-idle-ms = <100>;
             flavor = "tap-preferred";
             hold-trigger-key-positions = <5 15 26 27 6 16 7 17 28 8 18 29 9 19 30 31 35 36 37 34 33 32 13 12 11 10 4 25 14 24 3 2 23 1 22 0 21 20>;
+        };
+
+        hrm_lshift: hrm_lshift {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HRM_LSHIFT";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <160>;
+            quick-tap-ms = <200>;
+            require-prior-idle-ms = <100>;
+            flavor = "balanced";
+            hold-trigger-key-positions = <5 15 26 27 6 16 7 17 28 8 18 29 9 19 30 31 35 36 37 34 33 32 13 12 10 4 25 14 24 3 2 23 1 22 0 21 20>;
         };
     };
 
@@ -136,10 +149,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                &kp Q                &kp W             &kp E             &kp R              &kp T           &kp Y               &kp U               &kp I              &kp O              &kp P
-                &hrm_shift LSHIFT A  &hrm_left LGUI S  &hrm_left LALT D  &hrm_left LCTRL F  &kp G           &kp H               &hrm_right RCTRL J  &hrm_right RALT K  &hrm_right RGUI L  &hrm_shift RSHIFT SEMI
-&kp LEFT_SHIFT  &kp Z                &kp X             &kp C             &kp V              &kp B           &kp N               &kp M               &kp COMMA          &kp DOT            &kp SLASH               &kp RIGHT_SHIFT
-                                                       &mo 2             &kp SPACE          &lt_qt 2 DEL    &lt_qt 1 BACKSPACE  &kp RETURN          &mo 1
+                &kp Q                 &kp W             &kp E             &kp R              &kp T           &kp Y               &kp U               &kp I              &kp O              &kp P
+                &hrm_lshift LSHIFT A  &hrm_left LGUI S  &hrm_left LALT D  &hrm_left LCTRL F  &kp G           &kp H               &hrm_right RCTRL J  &hrm_right RALT K  &hrm_right RGUI L  &hrm_rshift RSHIFT SEMI
+&kp LEFT_SHIFT  &kp Z                 &kp X             &kp C             &kp V              &kp B           &kp N               &kp M               &kp COMMA          &kp DOT            &kp SLASH                &kp RIGHT_SHIFT
+                                                        &mo 1             &kp SPACE          &lt_qt 2 DEL    &lt_qt 1 BACKSPACE  &kp RETURN          &mo 2
             >;
         };
 
@@ -163,9 +176,9 @@
 
             bindings = <
         &trans     &kp LEFT_BRACKET  &kp SINGLE_QUOTE   &kp RIGHT_BRACKET      &kp KP_MINUS     &kp KP_PLUS       &kp N7        &kp N8        &kp N9        &kp KP_NUMBER_0
-        &kp TILDE  &kp LPAR          &kp GRAVE          &kp RIGHT_PARENTHESIS  &kp UNDER        &kp EQUAL         &kp NUMBER_4  &kp N5        &kp NUMBER_6  &trans
-&trans  &trans     &kp LBRC          &kp DOUBLE_QUOTES  &kp RIGHT_BRACE        &kp LESS_THAN    &kp GREATER_THAN  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans           &trans
-                                     &kp LSHIFT         &trans                 &trans           &trans            &kp KP_N0     &kp RSHFT
+        &kp TILDE  &kp LPAR          &kp GRAVE          &kp RIGHT_PARENTHESIS  &kp UNDER        &kp EQUAL         &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp KP_NUMBER_0
+&trans  &trans     &kp LBRC          &kp DOUBLE_QUOTES  &kp RIGHT_BRACE        &kp LESS_THAN    &kp GREATER_THAN  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_NUMBER_0  &trans
+                                     &kp LSHIFT         &trans                 &trans           &trans            &trans        &kp RSHFT
             >;
         };
 
