@@ -123,7 +123,7 @@
             quick-tap-ms = <200>;
             require-prior-idle-ms = <100>;
             flavor = "balanced";
-            hold-trigger-key-positions = <5 15 26 27 6 16 7 17 28 8 18 29 9 19 30 31 35 36 37 34 33 32 13 12 10 4 25 14 24 3 2 23 1 22 0 21 20>;
+            hold-trigger-key-positions = <5 15 26 27 6 16 7 17 28 8 18 29 9 19 30 31 35 36 37 34 33 32 13 12 10 4 25 14 24 3 2 23 1 22 0 21 20 11>;
         };
     };
 
