@@ -23,7 +23,7 @@
 
 &mt {
     quick-tap-ms = <100>;
-    global-quick-tap;
+    require-prior-idle-ms = <100>;
     flavor = "tap-preferred";
     tapping-term-ms = <170>;
 };
