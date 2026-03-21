@@ -1,8 +1,10 @@
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="/docs/images/TOTEM_logo_dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="/docs/images/TOTEM_logo_bright.svg">
-  <img alt="TOTEM logo font" src="/docs/images/TOTEM_logo_bright.svg">
-</picture>
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="/docs/images/TOTEM_logo_brigt.svg">
+    <source media="(prefers-color-scheme: light)" srcset="/docs/images/TOTEM_logo_dark.svg">
+    <img alt="TOTEM logo font" src="/docs/images/TOTEM_logo_bright.svg" width="450">
+  </picture>
+</div>
 
 # ZMK CONFIG FOR THE TOTEM SPLIT KEYBOARD
 
