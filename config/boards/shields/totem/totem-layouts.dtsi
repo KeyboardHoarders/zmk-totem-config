@@ -1,0 +1,49 @@
+#include <physical_layouts.dtsi>
+
+/ {
+totem_layout: totem_layout{
+    compatible = "zmk,physical-layout";
+    display-name = "TOTEM Keyboard Layout";
+    transform = <&default_transform>;
+    keys  //                     w   h    x    y     rot    rx    ry
+    = <&key_physical_attrs 100 100   70  136 (-1000)   120   186>
+    , <&key_physical_attrs 100 100  176   54  (-400)   226   104>
+    , <&key_physical_attrs 100 100  284    0       0     0     0>
+    , <&key_physical_attrs 100 100  379   44       0     0     0>
+    , <&key_physical_attrs 100 100  474   59       0     0     0>
+    , <&key_physical_attrs 100 100  873   59       0     0     0>
+    , <&key_physical_attrs 100 100  968   44       0     0     0>
+    , <&key_physical_attrs 100 100 1062    0       0     0     0>
+    , <&key_physical_attrs 100 100 1171   54     400  1221   104>
+    , <&key_physical_attrs 100 100 1277  136    1000  1327   186>
+    , <&key_physical_attrs 100 100   85  224 (-1000)   135   274>
+    , <&key_physical_attrs 100 100  182  143  (-400)   232   193>
+    , <&key_physical_attrs 100 100  284   90       0     0     0>
+    , <&key_physical_attrs 100 100  379  134       0     0     0>
+    , <&key_physical_attrs 100 100  474  148       0     0     0>
+    , <&key_physical_attrs 100 100  873  148       0     0     0>
+    , <&key_physical_attrs 100 100  968  134       0     0     0>
+    , <&key_physical_attrs 100 100 1062   90       0     0     0>
+    , <&key_physical_attrs 100 100 1165  143     400  1215   193>
+    , <&key_physical_attrs 100 100 1261  224    1000  1311   274>
+    , <&key_physical_attrs 100 100  101  312 (-1000)   151   362>
+    , <&key_physical_attrs 100 100  188  233  (-400)   238   283>
+    , <&key_physical_attrs 100 100  284  179       0     0     0>
+    , <&key_physical_attrs 100 100  379  223       0     0     0>
+    , <&key_physical_attrs 100 100  474  238       0     0     0>
+    , <&key_physical_attrs 100 100  873  238       0     0     0>
+    , <&key_physical_attrs 100 100  968  223       0     0     0>
+    , <&key_physical_attrs 100 100 1062  179       0     0     0>
+    , <&key_physical_attrs 100 100 1158  233     400  1208   283>
+    , <&key_physical_attrs 100 100 1246  312    1000  1296   362>
+    , <&key_physical_attrs 100 100    0  289 (-1000)    50   339>
+    , <&key_physical_attrs 100 100  352  332       0     0     0>
+    , <&key_physical_attrs 100 100  457  347    1500   507   397>
+    , <&key_physical_attrs 100 100  554  387    3000   604   437>
+    , <&key_physical_attrs 100 100  792  387 (-3000)   842   437>
+    , <&key_physical_attrs 100 100  889  347 (-1500)   939   397>
+    , <&key_physical_attrs 100 100  994  332       0     0     0>
+    , <&key_physical_attrs 100 100 1346  289    1000  1396   339>
+    ;
+};
+};
