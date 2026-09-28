@@ -1,7 +1,7 @@
 ## please clone to your own repo.  All pull requests will be denied as I use this for my shops keyboards and have a keymap and guide print out that goes with it.
 
 To flash:
-1.Download firmware in actions tab
+1.Download firmware in actions tab.
 
 2.keep both halves powered on
 
