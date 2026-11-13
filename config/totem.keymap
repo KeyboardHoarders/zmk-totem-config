@@ -20,6 +20,9 @@
 #define NAV  1
 #define SYM  2
 #define ADJ  3
+#define L4   4
+#define L5   5
+#define L6   6
 
 &mt {
     quick-tap-ms = <100>;
@@ -160,6 +163,38 @@
               &bootloader   &trans        &trans        &trans        &trans            &trans  &kp F4  &kp F5  &kp F6  &kp F11
 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR_ALL    &trans  &kp F1  &kp F2  &kp F3  &kp F10  &trans
                                           &trans        &trans        &trans            &trans  &trans  &trans
+            >;
+        };
+
+        // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
+
+        layer_4 {
+            label = "L4";
+            bindings = <
+              &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+              &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+      &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                              &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+        };
+
+        layer_5 {
+            label = "L5";
+            bindings = <
+              &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+              &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+      &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                              &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+        };
+
+        layer_6 {
+            label = "L6";
+            bindings = <
+              &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+              &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+      &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                              &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
